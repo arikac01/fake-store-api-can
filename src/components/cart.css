@@ -1,0 +1,80 @@
+/* cart.css */
+.cartCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* Center horizontally and add vertical margin */
+    padding: 10px; /* Decreased padding for a compact layout */
+    max-width: 1200px; /* Set a maximum width to prevent it from spanning the entire screen */
+}
+
+
+.itemDetails {
+    width: 650px; /* Adjust width for three items per row */
+    background-color: #fff; /* White background */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+    transition: transform 0.3s; /* Add smooth transition on hover */
+}
+
+.itemDetails:hover {
+    transform: translateY(-5px); /* Move item up on hover */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Add subtle shadow on hover */
+}
+
+.itemDetails img {
+    width: 100px; /* Adjust image size */
+    height: 100px; /* Adjust image size */
+    border: 1px solid #333;
+    border-radius: 5px; /* Rounded corners for the image */
+    object-fit:contain; /* Ensure the image fills the square shape */
+}
+
+.itemDetails div {
+    flex-grow: 1; /* Expand to fill available space */
+    text-align: center; /* Center text */
+}
+
+.itemDetails h4 {
+    font-size: 1rem; /* Medium font size for title */
+    margin: 5px 0;
+    color: #333; /* Dark text color */
+}
+
+.itemDetails p {
+    margin: 5px 0;
+    font-size: 0.9rem; /* Small font size for details */
+    color: #666; /* Medium grey text color */
+}
+
+.itemDetails .price {
+    font-weight: bold;
+    color: #009688; /* Teal color for price */
+}
+
+.itemDetails .quantity {
+    color: #ff5722; /* Orange color for quantity */
+}
+
+.itemDetails .total {
+    font-weight: bold;
+    color: #f44336; /* Red color for total */
+}
+
+.totalContainer {
+    display: flex;
+    justify-content: flex-end; /* Align total to the right */
+    margin-top: 20px;
+}
+
+.totalContainer h2 {
+    font-size: 1.2rem; /* Large font size for total */
+    font-weight: bold;
+    color: #333; /* Dark text color */
+}

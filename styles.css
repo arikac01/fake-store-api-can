@@ -1,0 +1,79 @@
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /* Center items vertically */
+}
+
+.header h3 {
+    margin: 0 5px; /* Adjusted margin */
+    padding: 8px 16px; /* Added padding */
+    background-color: #f0f0f0; /* Primary color */
+    color: rgb(28, 28, 28);
+    border: none; /* Matching border color */
+    border-radius: 20px; /* Rounded border */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration:none;
+}
+
+.header h3:hover {
+    background-color: #4caf50; /* Darker shade on hover */
+    color: white;
+    transform: scale(1.05); /* Slightly larger size on hover */
+}
+
+
+#cartNotify {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.notify {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 5px 20px; /* Adjusted padding */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease;
+    z-index: 999;
+    align-items: center; /* Center items vertically */
+}
+
+.notify.show {
+    display: block;
+    opacity: 1;
+}
+
+.filterContainer {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Adjusted width */
+    height: 70px; /* Adjusted height */
+    margin: 10px 0; /* Adjusted margin */
+    padding: 5px;
+    background-color: #f0f0f0; /* Light background color */
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.filterBtn {
+    margin: 5px;
+    padding: 10px; /* Increased padding */
+    width: 150px; /* Increased width */
+    background-color: #fff; /* White background */
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.filterBtn:hover {
+    background-color: #4caf50; /* Green background on hover */
+    color: #fff; /* White text on hover */
+    transform: scale(1.05); /* Slightly larger size on hover */
+}
